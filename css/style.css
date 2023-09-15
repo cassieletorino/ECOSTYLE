@@ -136,7 +136,7 @@ header {
 }
 
 .banner {
-    height: 416px;
+    height: 600px;
     width: 100vw;
     background-image: url('../img/banner-home.png');
     background-size: cover;
