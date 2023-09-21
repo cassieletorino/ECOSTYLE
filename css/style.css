@@ -5,6 +5,34 @@
     font-family: 'Poppins', sans-serif, arial;
 }
 
+/* Scrollbar */
+::-webkit-scrollbar {
+    height: 12px;
+    width: 15px;
+    background-color: #F1D2CD;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #F1D2CD;
+    width: 15px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar:horizontal{
+    display: none;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #F2ADA2;
+    width: 8px;
+    border-radius: 15px;
+    border: 3px solid #F1D2CD;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: #F1D2CD;
+}
+
 .upper-menu {
     max-width: 95vw;
     margin: 0;
@@ -20,6 +48,7 @@ header {
     padding-bottom: 10px;
     padding-left: 5px;
     padding-right: 0px;
+    /* box-shadow: inset 0 0 10px #000; */
 }
 
 .important {
@@ -103,6 +132,7 @@ header {
     padding-bottom: 0px;
     padding-left: 100px;
     padding-right: 100px;
+    box-shadow: inset 0 0 10px #211938;
 }
 
 .logo {
@@ -110,6 +140,7 @@ header {
 }
 
 .logo img {
+    margin-top: 5px;
     height: 80px;
     width: 80px;
 }
@@ -135,23 +166,41 @@ header {
     font-size: 20px;
 }
 
+nav a::after{
+    content: " ";
+    width: 50%;
+    height: 4px;
+    background-color: #F2ADA2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+nav a:hover ::after{
+    width: 50%;
+}
+
+/* Banner */
 .banner {
     height: 600px;
     width: 100vw;
     background-image: url('../img/banner-home.svg');
+    margin-left: 0;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
-    padding: 30px;
+    padding: 20px;
 }
 
 .banner-content h1 {
-    font-family: 'Antonio', sans-serif;
-    font-size: 180px;
-    letter-spacing: 40px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 170px;
+    letter-spacing: 20px;
     margin-bottom: 0px;
-    margin-left: 180px;
+    margin-top: 20px;
+    margin-left: 240px;
     color: #7C56C8;
 }
 
@@ -171,7 +220,7 @@ header {
     padding: 15px;
     background-color: #09182E;
     color: white;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-left: 120px;
     cursor: pointer;
 }
@@ -182,12 +231,14 @@ header {
     transition: ease 0.3s;
 }
 
+/* Diferenciais */
+
 .diferenciais {
     width: 100vw;
     background-color: #5C469C;
     display: flex;
     justify-content: space-between;
-    padding: 30px 0;
+    padding: 30px 40px;
 }
 
 .diferencial {
@@ -197,7 +248,7 @@ header {
 
 .diferencial span {
     color: #F2ADA2;
-    font-size: 130px;
+    font-size: 120px;
     padding: 15px 0;
     display: block;
     margin: 0 auto;
@@ -212,6 +263,8 @@ header {
     color: white;
     font-size: 20px;
 }
+
+/* Seção de imagem e texto */
 
 .image-text-section, .text-image-section {
     background-color: #7C56C8; 
@@ -239,11 +292,12 @@ header {
 }
 
 .text p{
-    font-size: 20px;
+    font-size: 23px;
+    padding: 25px;
 }
 
 .text h2 {
-    font-size: 24px;
+    font-size: 35px;
     justify-content: center;
     text-align: center;
     margin-bottom: 10px;
@@ -254,8 +308,11 @@ header {
     height: auto;
 }
 
+/* Rodapé */
+
 .footer {
     background-color: #5C469C;
+    width: 100vw;
     color: white;
     margin-top: -6px;
     padding: 20px 0;
@@ -266,7 +323,7 @@ header {
 .footer-section {
     flex: 1;
     text-align: left;
-    margin-left: 20px;
+    margin-left: 80px;
 }
 
 .footer-section h2 {
