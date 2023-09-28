@@ -160,31 +160,21 @@ header {
     margin: 20px;
 }
 
+.menu li.selected {
+    font-weight: bold;
+    text-decoration: underline #F2ADA2 30%;
+}
+
 .menu ul li a {
     text-decoration: none;
     color: white;
     font-size: 20px;
 }
 
-nav a::after{
-    content: " ";
-    width: 50%;
-    height: 4px;
-    background-color: #F2ADA2;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: 0.5s ease-in-out;
-}
-
-nav a:hover ::after{
-    width: 50%;
-}
-
-/* Banner */
+/* Banner home */
 .banner {
     height: 600px;
-    width: 100vw;
+    width: 100%;
     background-image: url('../img/banner-home.svg');
     margin-left: 0;
     background-size: cover;
@@ -192,6 +182,7 @@ nav a:hover ::after{
     background-repeat: no-repeat;
     text-align: center;
     padding: 20px;
+    box-sizing: content-box;
 }
 
 .banner-content h1 {
@@ -239,6 +230,7 @@ nav a:hover ::after{
     display: flex;
     justify-content: space-between;
     padding: 30px 40px;
+    margin-top: -5px;
 }
 
 .diferencial {
@@ -306,6 +298,92 @@ nav a:hover ::after{
 .image img {
     max-width: 100%;
     height: auto;
+}
+
+/* Banner contato */
+
+.banner-contato {
+    height: 600px;
+    width: 100%;
+    background-image: url('../img/contato.svg');
+    margin-left: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 20px;
+    box-sizing: content-box;
+}
+
+.banner-content-contato h1 {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 170px;
+    letter-spacing: 20px;
+    margin-bottom: 0px;
+    margin-top: 100px;
+    margin-left: 220px;
+    color: #7C56C8;
+}
+
+.banner-content-contato p {
+    color: white;
+    text-align: center;
+    font-size: 23px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 130px;
+}
+
+/* Contato */
+
+.contato {
+    margin-top: -3px;
+    height: 800px;
+    background-color: black;
+}
+
+.anya-contato {
+    width: 25%;
+    height: 800px;
+    float: left;
+}
+
+.anya-contato img{
+    margin-top: -3px;
+    margin-bottom: -13px;
+    width: 600px;
+    height: 803px;
+    border: 10px solid #7C56C8;
+    background-color: black;
+}
+
+.contato-right{
+    float: right;
+}
+
+.contato-right h1{
+    color: #C8B3EE;
+    font-weight: 400;
+    font-size: 36px;
+}
+
+.contato-btn {
+    border: 4px solid #7C56C8;
+    width: 300px;
+    padding: 15px;
+    background-color: #7C56C8;
+    color: #F2ADA2;
+    font-weight: bolder;
+    margin-top: 50px;
+    margin-left: 120px;
+    cursor: pointer;
+}
+
+.contato-btn:hover{
+    border: 4px solid #F2ADA2;
+    background-color: #5C469C;
+    transition: ease 0.3s;
+    color: white;
 }
 
 /* Rodapé */
