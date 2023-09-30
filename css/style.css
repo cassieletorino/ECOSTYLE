@@ -340,6 +340,7 @@ header {
     margin-top: -3px;
     height: 800px;
     background-color: black;
+    display: flex;
 }
 
 .anya-contato {
@@ -349,8 +350,8 @@ header {
 }
 
 .anya-contato img{
-    margin-top: -3px;
-    margin-bottom: -13px;
+    margin-top: -8px;
+    margin-bottom: -18px;
     width: 600px;
     height: 803px;
     border: 10px solid #7C56C8;
@@ -365,6 +366,30 @@ header {
     color: #C8B3EE;
     font-weight: 400;
     font-size: 36px;
+    align-self: center;
+    justify-self: center;
+}
+
+.icons-contato {
+    padding: 25% 50%;
+    display: inline-flex;
+}
+
+.icon-zap, .icon-insta, .icon-email {
+    width: 80px;
+    height: 80px;
+    background-color: #F2ADA2;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.icon-zap img, .icon-insta img, .icon-email img {
+    margin-top: -5px;
+    align-self: center;
+    width: 50px;
+    height: 50px;
+    background-color: #F2ADA2;
 }
 
 .contato-btn {
@@ -406,6 +431,7 @@ header {
 
 .footer-section h2 {
     color: #F2ADA2;
+    margin-top: 40px;
     margin-bottom: 20px;
 }
 
