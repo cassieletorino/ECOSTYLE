@@ -450,6 +450,18 @@ header {
     margin-left: 38%;
 }
 
+/* Política da Loja */
+.politica {
+    background-color: #F4BBB2;
+    width: 100vw;
+    height: 100vh;
+}
+
+.textao {
+    width: 75vw;
+    border: 20px #F2ADA2;
+}
+
 /* Rodapé */
 
 .footer {
@@ -472,6 +484,11 @@ header {
     color: #F2ADA2;
     margin-top: 40px;
     margin-bottom: 20px;
+}
+
+.footer-section a:hover{
+    color: #F1D2CD;
+    transition: 0.5s;
 }
 
 ul {
