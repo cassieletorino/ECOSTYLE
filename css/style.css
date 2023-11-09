@@ -349,6 +349,31 @@ header {
 }
 
 /* Contato */
+.contato{
+    height: 1000px;
+    width: 100vw;
+    background-color: black;
+}
+
+.contato-left, .contato-right {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.anya-contato{
+    border: #7C56C8 8px solid;
+    height: 100%;
+    width: auto;
+    padding: 20px;
+}
+
+.title-contato{
+    color: #C8B3EE;
+    text-transform: capitalize;
+    font-size: 50px;
+    font-weight: 300;
+}
 
 .contato-btn {
     border: 4px solid #7C56C8;
