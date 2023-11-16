@@ -370,7 +370,7 @@ header {
 
 .title-contato{
     color: #C8B3EE;
-    text-transform: capitalize;
+    text-transform: uppercase;
     font-size: 50px;
     font-weight: 300;
 }
@@ -550,6 +550,29 @@ header {
 .confira a{
     text-decoration: none;
     color: white;
+}
+
+/* Loja peruca */
+.loja-peruca{
+    background-color: #C8B3EE;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.peruca{
+    width: 30%;
+    height: auto;
+    padding: 10 10;
+}
+
+.nome-peruca, .preco-peruca{
+    text-transform: uppercase;
+    font-size: 21px;
+}
+
+.nome-peruca{
+    font-weight: bold;
 }
 
 /* Política da Loja */
