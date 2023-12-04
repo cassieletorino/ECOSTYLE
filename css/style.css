@@ -7,6 +7,7 @@
 
 ::selection{
     background-color: black;
+    color: white;
 }
 
 /* Scrollbar */
@@ -52,10 +53,9 @@ header {
     padding-bottom: 10px;
     padding-left: 5px;
     padding-right: 0px;
-    /* box-shadow: inset 0 0 10px #000; */
 }
 
-.modal {
+.modal, .modal1, .modalrec {
     display: none;
     position: fixed;
     top: 0;
@@ -88,7 +88,7 @@ header {
     margin-left: 30px;
 }
 
-input:focus, select:focus{
+input:focus{
     box-shadow: 0 0 0 0;
     border: 0 none;
     outline: 0;
@@ -103,7 +103,7 @@ input:focus, select:focus{
     color: #5C469C;
 }
 
-.modal-content {
+.modal-content, .modal1-content, .modalrec-content {
     background-color: #fff;
     padding: 30px 50px;
     border-radius: 15px;
@@ -668,26 +668,117 @@ input:focus, select:focus{
 }
 
 /* Loja peruca */
-.loja-peruca{
-    background-color: #C8B3EE;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
+.peruca-area {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+padding-top: 2%;
+background-color: #C8B3EE;
 }
 
-.peruca{
-    width: 30%;
-    height: auto;
-    padding: 10 10;
+.loja-peruca {
+display: none;
 }
 
-.nome-peruca, .preco-peruca{
-    text-transform: uppercase;
-    font-size: 21px;
+.peruca {
+text-align: center;
+max-width: 300px;
+margin: 30px auto 80px auto;
 }
 
-.nome-peruca{
-    font-weight: bold;
+.peruca a {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-decoration: none;
+}
+
+.peruca-img {
+width: 300px;
+height: 200px;
+margin-bottom: 5%;
+transition: 0.3s;
+}
+
+.peruca-img:hover {
+transition: 0.5s;
+transform: scale(1.01);
+}
+
+.peruca-img img {
+width: 100%;
+height: auto;
+border-radius: 10%;
+}
+
+.peruca-name {
+font-size: 25px;
+font-weight: 800;
+color: #09182E;
+margin-top: 250px;
+text-transform: uppercase;
+}
+
+.peruca-price {
+font-size: 23px;
+font-weight: 800;
+color: #09182E;
+}
+
+/* Loja cosplay */
+.cosplay-area {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+padding-top: 2%;
+background-color: #C8B3EE;
+}
+
+.loja-cosplay {
+display: none;
+}
+
+.cosplay {
+text-align: center;
+max-width: 300px;
+margin: 30px auto 80px auto;
+}
+
+.cosplay a {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-decoration: none;
+}
+
+.cosplay-img {
+width: 300px;
+height: 200px;
+margin-bottom: 5%;
+transition: 0.3s;
+}
+
+.cosplay-img:hover {
+transition: 0.5s;
+transform: scale(1.01);
+}
+
+.cosplay-img img {
+width: 100%;
+height: auto;
+border-radius: 10%;
+}
+
+.cosplay-name {
+font-size: 25px;
+font-weight: 800;
+color: #09182E;
+margin-top: 250px;
+text-transform: uppercase;
+}
+
+.cosplay-price {
+font-size: 23px;
+font-weight: 800;
+color: #09182E;
 }
 
 /* Política da Loja */

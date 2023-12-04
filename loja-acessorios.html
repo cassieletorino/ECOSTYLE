@@ -27,11 +27,81 @@
                   <input type="text">
               </div>
               <div class="icons">
-                  <a href="#"><span class="material-symbols-outlined" id="account">account_circle</span></a>
+                  <a href="#" onclick="openModal()"><span class="material-symbols-outlined" id="account">account_circle</span></a>
                   <a href="#"><span class="material-symbols-outlined" id="cart">shopping_cart</span></a>
               </div>
           </div>
       </header>
+
+      <div class="modal" id="modal">
+        <div class="modal-content">
+            <span onclick="closeModal()" style="cursor: pointer; float: right;" class="material-symbols-outlined">close</span>
+            <img class="anya-login" src="img/anya-login.svg">
+            <form action="/login" method="POST">
+            <div class="input-login">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-login">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+            </div>
+            <div class="link-rec"><p>Esqueceu a senha? <a href="#" onclick="closeModal(), openModalRec()"> Clique aqui</a></p></div>
+            <div>
+                <input class="input-login-btn" type="submit" value="Entrar">
+            </div>
+            <div class="login-bottom">
+                <p>Ainda não tem cadastro?</p>
+                <a class="link-criar" href="#" onclick="closeModal(), openModal1()">Crie sua conta</a>
+            </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal1" id="modal1">
+        <div class="modal1-content">
+            <span onclick="closeModal1()" style="cursor: pointer; float: right;" class="material-symbols-outlined">close</span>
+            <img class="anya-login" src="img/anya-cadastro.svg">
+            <form action="/login" method="POST">
+            <div class="input-login">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-login">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+            </div>
+            <div>
+                <input class="input-login-btn" type="submit" value="Cadastrar">
+            </div>
+            <div class="login-bottom">
+                <p>Já tem cadastro?</p>
+                <a class="link-criar" href="#" onclick="closeModalRec(), closeModal1(), openModal()">Faça login</a>
+            </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modalrec" id="modalrec">
+        <div class="modalrec-content">
+            <span onclick="closeModalRec()" style="cursor: pointer; float: right;" class="material-symbols-outlined">close</span>
+            <img class="anya-login" src="img/rec.svg">
+            <form action="/login" method="POST">
+            <div class="input-login">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <input class="input-login-btn" type="submit" value="Recuperar senha">
+            </div>
+            <div class="login-bottom">
+                <p>Já tem cadastro?</p>
+                <a class="link-criar" href="#" onclick="closeModalRec(), closeModal1(), openModal()">Faça login</a>
+            </div>
+            </form>
+        </div>
+    </div>
+
       <section>
           <div class="bottom-menu">
               <div class="logo">
@@ -75,7 +145,7 @@
         <div class="footer-section">
             <h2>SIGA-NOS</h2>
             <ul>
-                <li><a href="#">Instagram</a></li>
+                <li><a href="https://www.instagram.com/ecostylecosplay/?utm_source=ig_web_button_share_sheet&igshid=MmVlMjlkMTBhMg==">Instagram</a></li>
                 <li><a href="#">TikTok</a></li>
             </ul>
         </div>
@@ -84,5 +154,5 @@
         <p>©ECOSTYLE <br> 2023</p>
         </footer>
     </body>
-
+<script src="js/script.js"></script>
 </html>
