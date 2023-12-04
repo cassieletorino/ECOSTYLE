@@ -18,7 +18,7 @@
     <header>
         <div class="upper-menu">
             <div class="important">
-                <a href="#"><span class="material-symbols-outlined">error</span>
+                <a href="https://wa.me/5512997680276"><span class="material-symbols-outlined">error</span>
                     <p>TIRE SUAS DÚVIDAS CONOSCO</p>
                 </a>
             </div>
@@ -27,11 +27,38 @@
                 <input type="text">
             </div>
             <div class="icons">
-                <a href="#"><span class="material-symbols-outlined" id="account">account_circle</span></a>
+                <a href="#" onclick="openModal()"><span class="material-symbols-outlined" id="account">account_circle</span></a>
                 <a href="#"><span class="material-symbols-outlined" id="cart">shopping_cart</span></a>
             </div>
         </div>
     </header>
+
+    <div class="modal" id="modal">
+    <div class="modal-content">
+        <span onclick="closeModal()" style="cursor: pointer; float: right;" class="material-symbols-outlined">close</span>
+        <img class="anya-login" src="img/anya-login.svg">
+        <!-- <h2 class="title-login">Login</h2> -->
+        <form action="/login" method="POST">
+        <div class="input-login">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="input-login">
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+        </div>
+        <div class="link-rec"><p>Esqueceu a senha? <a href="#"> Clique aqui</a></p></div>
+        <div>
+            <input class="input-login-btn" type="submit" value="Entrar">
+        </div>
+        <div class="login-bottom">
+            <p>Ainda não tem cadastro?</p>
+            <a class="link-criar" href="#">Crie sua conta</a>
+        </div>
+        </form>
+    </div>
+    </div>
+
     <section>
         <div class="bottom-menu">
             <div class="logo">
@@ -167,5 +194,5 @@
         <p>©ECOSTYLE <br> 2023</p>
     </footer>
 </body>
-
+<script src="js/script.js"></script>
 </html>
