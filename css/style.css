@@ -725,60 +725,37 @@ color: #09182E;
 }
 
 /* Loja cosplay */
-.cosplay-area {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-padding-top: 2%;
-background-color: #C8B3EE;
+.black{
+    background-color: black;
 }
 
-.loja-cosplay {
-display: none;
+.em-desenvolvimento{
+    display: flex;
+    height: 600px;
 }
 
-.cosplay {
-text-align: center;
-max-width: 300px;
-margin: 30px auto 80px auto;
+.desenv{
+    margin-top: 8%;
+    font-family: 'Chakra Petch', sans-serif;
+    color: #C8B3EE;
+    font-size: 70px;
+    padding: 50px;
 }
 
-.cosplay a {
-display: flex;
-flex-direction: column;
-align-items: center;
-text-decoration: none;
+.spinner{
+    width: 80px;
+    height: 80px;
+    border: 20px solid rgba(255, 255, 255, 0.1);
+    border-top-color: #F2ADA2;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-top: 11%;
 }
 
-.cosplay-img {
-width: 300px;
-height: 200px;
-margin-bottom: 5%;
-transition: 0.3s;
-}
-
-.cosplay-img:hover {
-transition: 0.5s;
-transform: scale(1.01);
-}
-
-.cosplay-img img {
-width: 100%;
-height: auto;
-border-radius: 10%;
-}
-
-.cosplay-name {
-font-size: 25px;
-font-weight: 800;
-color: #09182E;
-margin-top: 250px;
-text-transform: uppercase;
-}
-
-.cosplay-price {
-font-size: 23px;
-font-weight: 800;
-color: #09182E;
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 /* Política da Loja */
